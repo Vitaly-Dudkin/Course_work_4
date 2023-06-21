@@ -3,7 +3,6 @@ Dataclasses to simple conversion to/from json
 
 """
 
-
 from pydantic import BaseModel
 
 
