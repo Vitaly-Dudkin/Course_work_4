@@ -2,8 +2,18 @@ from .models import VacancyInfo, Salary
 
 
 class Vacancy:
+    """
+    Class for interacting with data about vacancies
+
+    """
 
     def __init__(self, title: str, url: str, description: str,  salary: Salary | str):
+        """
+        :param title: The title pf vacancy
+        :param url: Url to vacancy page in the website
+        :param description: Brief job description
+        :param salary: class: Salary object if salary data is not empty or str: "No salary info"
+        """
         self._info = VacancyInfo(
             title=title,
             url=url,
