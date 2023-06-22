@@ -30,7 +30,7 @@ class GenericParser(ABC):
     @abstractmethod
     def parse_vacancy(self, vacancy_info: dict) -> Vacancy:
         """
-        :param vacancy_info: Dictionary with some fields containing information about the current vacancy
+        :param vacancy_info: Dictionary with some fields  containing information about the current vacancy
 
         :return: Vacancy object with parsed fields
         """
