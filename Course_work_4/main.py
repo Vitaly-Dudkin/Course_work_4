@@ -51,7 +51,10 @@ class Main:
                         f"number_of_vacancies: int > 0\n"
                         f"\n{Color.yellow}4. Delete saved vacancies{Color.white}\n\n"
                         f"{Color.cyan}Command:{Color.white}\n"
-                        f"del vac"
+                        f"del vac\n"
+                        f"\n{Color.yellow}5. If you wanna leave\n"
+                        f"\n{Color.cyan}Command:{Color.white}\n"
+                        f"quit"
                     )
 
                 case "load", "vac", website, pages, *keywords:
