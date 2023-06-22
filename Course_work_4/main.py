@@ -10,7 +10,7 @@ from json_db import JsonDB
 from utills.colors import Color
 
 
-class Test:
+class Main:
 
     @staticmethod
     def validate_number(function):
@@ -55,7 +55,7 @@ class Test:
                     )
 
                 case "load", "vac", website, pages, *keywords:
-                    Test.load_vacancies(pages, website, keywords)
+                    Main.load_vacancies(pages, website, keywords)
 
                 case "show", "vac":
                     for vacancy in JsonDB.get_vacancies():
@@ -108,5 +108,5 @@ class Test:
 if __name__ == '__main__':
     hh_parser = HeadHunterParser()
     superjob_parser = SuperJobParser()
-    test = Test()
+    test = Main()
     test.main_loop()
